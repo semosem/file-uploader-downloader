@@ -31,6 +31,13 @@ A steps to get a development env running
 
 Now you have fully functioning copy to further develop the signup form
 
+## Running the server
+
+```
+cd api
+node server.js
+```
+
 ## Running the tests
 
 ```
