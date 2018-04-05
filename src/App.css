@@ -7,11 +7,7 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-    115deg,
-    rgba(86, 216, 228, 1) 5%,
-    rgba(159, 1, 234, 1) 95%
-  );
+  background: linear-gradient(115deg, rgba(86, 216, 228, 1) 5%, purple 95%);
 }
 
 .App-logo {

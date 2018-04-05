@@ -1,4 +1,4 @@
-const port = 3001,
+const port = process.env.PORT || 3001,
   express = require("express"),
   upload = require("express-fileupload"),
   fs = require("fs"),

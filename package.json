@@ -22,7 +22,7 @@
   "engines": {
     "node": "8.10.0"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3001/",
   "devDependencies": {
     "gh-pages": "^1.1.0"
   },

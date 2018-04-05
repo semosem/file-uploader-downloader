@@ -60,11 +60,13 @@
 .uploadContainer {
   text-align: center;
   border-top: 1px solid white;
+  min-height: 20rem;
   transition: all 0.25s;
   border-radius: 50%;
   margin-top: 2vh;
   left: 0;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .file-name {
@@ -111,6 +113,7 @@
     transform: rotate(20deg);
   }
 }
+
 @media (max-width: 800px) {
   .main-section {
     width: 100vw;

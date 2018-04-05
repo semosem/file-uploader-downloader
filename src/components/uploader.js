@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./uploader.css";
 import { post, get } from "axios";
-import fd from "js-file-download";
+import download from "js-file-download";
 import { Animated } from "react-animated-css";
 
 class Uploader extends Component {
@@ -65,7 +65,7 @@ class Uploader extends Component {
       get("/download", { params: { filename: filename, index: index } }).then(
         res => {
           console.log(res);
-          fd(res.data, filename);
+          download(res.data, filename);
         }
       );
     }
