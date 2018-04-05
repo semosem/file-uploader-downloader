@@ -1,0 +1,102 @@
+.main-section {
+  background-color: purple;
+  position: absolute;
+  margin: auto;
+  top: 20vh;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 50vw;
+  height: 80vh;
+  color: white;
+  border-radius: 5px;
+  /* clip-path: polygon(5% 5%, 100% 0%, 100% 100%, 0% 100%); */
+}
+.title {
+  text-align: center;
+}
+.main-title {
+  color: white;
+  margin-top: 4rem;
+  font-size: 3.5rem;
+  font-family: "Jura", sans-serif;
+  font-weight: bold;
+}
+.sub-title {
+  text-align: center;
+  color: rgba(86, 216, 228, 1);
+  font-family: "Jura", sans-serif;
+}
+.btns {
+  text-align: center;
+  margin-top: 4rem;
+}
+.btn-left {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding: 0.7rem;
+  width: 10rem;
+  border: none;
+  clip-path: polygon(5% 5%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.btn-left:hover {
+  color: purple;
+  cursor: pointer;
+}
+.btn-left:active {
+  padding: 0.8rem;
+  clip-path: polygon(10% 5%, 100% 0%, 100% 100%, 0% 100%);
+}
+.inputfile {
+  border: 1px solid rgba(86, 216, 228, 1);
+  padding: 5px;
+  clip-path: polygon(0% 0%, 95% 5%, 95% 95%, 0% 100%);
+}
+.uploadContainer {
+  position: absolute;
+  width: 50vw;
+  height: 40%;
+  /* overflow: hidden; */
+  bottom: 0;
+  background-color: black;
+  text-align: center;
+}
+.file-name {
+  padding: 5px;
+  display: inline-block;
+  list-style: none;
+  border: 1px solid white;
+  width: 15%;
+  height: 10%;
+  margin: 3px;
+  padding: 4rem 1rem;
+  text-align: center;
+  animation: bg 2s;
+}
+.file-name:hover {
+  background-color: green;
+}
+@keyframes bg {
+  0% {
+    background-color: lightgreen;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+@media (max-width: 800px) {
+  .main-section {
+    width: 100vw;
+    position: relative;
+    top: -10vh;
+
+    /* clip-path: polygon(5% 5%, 100% 0%, 100% 100%, 0% 100%); */
+  }
+
+  .uploadContainer {
+    width: 100vw;
+  }
+}
