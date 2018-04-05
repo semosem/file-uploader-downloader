@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./uploader.css";
 import { post, get } from "axios";
 import fd from "js-file-download";
+import { Animated } from "react-animated-css";
+
 class Uploader extends Component {
   state = {
     file: null,
@@ -78,6 +80,7 @@ class Uploader extends Component {
                 ? this.state.response
                 : "Content uploader"}
             </h1>
+
             <p className="sub-title"> Simple content uploader</p>
           </section>
           <section className="btns">
@@ -99,16 +102,22 @@ class Uploader extends Component {
         <div className="uploadContainer">
           {this.props.startFetch ? (
             <ul>
-              {this.state.uploadedFiles.map((filename, index) => (
-                <li
-                  key={filename}
-                  className="file-name"
-                  onClick={this.fileDownload.bind(this, index, filename)}
-                >
-                  <p>{filename}</p>
-                  <button className="download-btn">DOWNLOAD</button>
-                </li>
-              ))}
+              <Animated
+                animationIn="jello"
+                animationOut="wobble"
+                isVisible={true}
+              >
+                {this.state.uploadedFiles.map((filename, index) => (
+                  <li
+                    key={filename}
+                    className="file-name"
+                    onClick={this.fileDownload.bind(this, index, filename)}
+                  >
+                    <p>{filename}</p>
+                    <button className="download-btn">DOWNLOAD</button>
+                  </li>
+                ))}{" "}
+              </Animated>
             </ul>
           ) : (
             ""

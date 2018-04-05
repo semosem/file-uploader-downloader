@@ -1,5 +1,4 @@
-const http = require("http"),
-  port = 3001,
+const port = 3001,
   express = require("express"),
   upload = require("express-fileupload"),
   fs = require("fs"),
@@ -21,6 +20,7 @@ serveWith.get("/download", (req, res) => {
   const file = req.query.filename;
   var filePath = path.join(__dirname, `uploads/${req.query.filename}`);
   console.log(filePath);
+  res.setHeader("Content-Type", "application/pdf");
   res.download(filePath);
 });
 serveWith.post("/", (req, res) => {

@@ -34,11 +34,10 @@ class App extends Component {
             <button className="fetch" onClick={this.startFech.bind(this)}>
               Fetch
             </button>
-            <div>
-              <div className="count">
-                <h1 className="num">{this.state.fileCount}</h1>
-                <p className="text">File/s uploaded</p>
-              </div>
+
+            <div className="count">
+              <h1 className="num">{this.state.fileCount}</h1>
+              <p className="text">File/s uploaded</p>
             </div>
           </div>
           {/* <h1 className="logo-title"> Telia</h1>*/}
