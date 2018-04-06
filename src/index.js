@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+
+// UploaderComponent is imported here
 import UploaderComponent from "./components/uploader";
 
 
