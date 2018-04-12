@@ -20,7 +20,6 @@ serveWith.get("/download", (req, res) => {
   const file = req.query.filename;
   var filePath = path.join(__dirname, `uploads/${req.query.filename}`);
   console.log(filePath);
-  res.setHeader("Content-Type", "application/pdf");
   res.download(filePath);
 });
 serveWith.post("/", (req, res) => {

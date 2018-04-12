@@ -47,7 +47,8 @@ npm start
 ## Mainly Built With
 
 * [React](https://reactjs.org/) - The web framework used
-* [NodeJs](yarnpkg.com/) - Dependency Management
+* [NodeJS](yarnpkg.com/) - Platform used
+* [Express](yarnpkg.com/) - Server side web needs
 
 ## Authors
 

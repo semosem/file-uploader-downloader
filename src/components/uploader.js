@@ -4,6 +4,7 @@ import { post, get } from "axios";
 import download from "js-file-download";
 import { Animated } from "react-animated-css";
 
+const ThemeContext = React.createContext("light");
 class Uploader extends Component {
   state = {
     file: null,
@@ -63,7 +64,7 @@ class Uploader extends Component {
   fileDownload(index, filename, evnt) {
     if (evnt.target.className === "download-btn") {
       get("/download", { params: { filename: filename, index: index } }).then(
-        res => {
+        (res, req) => {
           console.log(res);
           download(res.data, filename);
         }
@@ -85,10 +86,12 @@ class Uploader extends Component {
           </section>
           <section className="btns">
             <input
+              multiple
               type="file"
               name="file"
               ref="inputfile"
               id="file"
+              multiple
               className="inputfile"
               onChange={this.onChange.bind(this)}
             />

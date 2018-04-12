@@ -15,7 +15,6 @@
 }
 
 .main-title {
-  color: white;
   margin-top: 4rem;
   font-size: 3.5rem;
   font-family: "Jura", sans-serif;
@@ -60,13 +59,13 @@
 .uploadContainer {
   text-align: center;
   border-top: 1px solid white;
-  min-height: 20rem;
   transition: all 0.25s;
   border-radius: 50%;
   margin-top: 2vh;
   left: 0;
   overflow: hidden;
   box-sizing: border-box;
+  width: 50vw;
 }
 
 .file-name {
@@ -85,6 +84,7 @@
   transform: rotate(20deg);
   border-top: 5px solid purple;
   animation: bg 2s;
+  transition: all 0.25s;
 }
 .file-name:hover {
   background-color: rgba(86, 216, 228, 1);
@@ -118,7 +118,7 @@
   .main-section {
     width: 100vw;
     position: relative;
-    top: -10vh;
+    top: 0;
 
     /* clip-path: polygon(5% 5%, 100% 0%, 100% 100%, 0% 100%); */
   }
