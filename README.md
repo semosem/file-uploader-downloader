@@ -19,36 +19,42 @@ A steps to get a development env running
 * clone your copy of the repository
 
 ```
-# git clone https://github.com/semosem/HTML5-test.git
+# git clone https://github.com/semosem/file-uploader-downloader.git
 ```
 
-* cd into the cloned directory and install necessary dependencies using the following command
+* cd into this cloned directory and install necessary dependencies using the following command
 
 ```
 # cd client
 # npm install
+
 ```
 
-Now you have fully functioning copy to further develop the signup form
+Now you have fully functioning copy of this project to further develop or see how it works within your local machine.
 
 ## Running the server
+
+You can now run the server using the following two commands respectively
 
 ```
 cd api
 node server.js
+
 ```
 
-## Running the tests
+## Running the react cleint
+
+This should be done in a different tab of your terminal, cd back into "client" directory and use
 
 ```
 npm start
 ```
 
-## Mainly Built With
+## Mainly Built With the following techs 
 
-* [React](https://reactjs.org/) - The web framework used
-* [NodeJS](yarnpkg.com/) - Platform used
-* [Express](yarnpkg.com/) - Server side web needs
+* [React](https://reactjs.org/) - As a Cleint  Web framework 
+* [NodeJS](https://nodejs.org/) - Platform used
+* [Express](https://expressjs.com/) - For server side web needs
 
 ## Authors
 

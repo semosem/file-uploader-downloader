@@ -6,15 +6,16 @@ import { Animated } from "react-animated-css";
 
 const ThemeContext = React.createContext("light");
 class Uploader extends Component {
+//   initial state 
   state = {
-    file: null,
-    fileUploaded: false,
-    response: "",
+    file: null, // files uploaded will be stored here, see the function onChange below
+    fileUploaded: false,  
+    response: "", 
     uploadedFiles: []
   };
 
   componentWillMount() {
-    this.hadleDelay();
+    this.hadleDelay(); //  mainly used in error hadling and counting uploaded contents 
   }
 
   hadleDelay() {

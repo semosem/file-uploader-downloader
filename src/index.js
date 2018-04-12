@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+
+// UploaderComponent is imported here
 import UploaderComponent from "./components/uploader";
-// import logo from "./Telia_logo.svg";
-// import { post, get } from "axios";
+
 
 import "./App.css";
 // <img src={logo} className="App-logo" alt="logo" />
@@ -11,17 +12,14 @@ class App extends Component {
     fileCount: 0,
     startFetch: false
   };
-  componentDidMount() {}
 
   // hadles counting of uploaded files
   handleCount(e) {
-    console.log(e.state.uploadedFiles.length);
     this.setState({ fileCount: e.state.uploadedFiles.length });
   }
 
   // starts the fetching process
   startFech() {
-    console.log("startFetch");
     this.setState({
       startFetch: true
     });
@@ -50,7 +48,7 @@ class App extends Component {
           startFetch={this.state.startFetch}
         />
 
-        {/*You can see how works by looking at the file itself the rest of this page is full of decorators*/}
+        {/*You can see how it works by looking at the file itself the rest of this page is full of decoratorations*/}
       </div>
     );
   }
