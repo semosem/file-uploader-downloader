@@ -1,65 +1,57 @@
+# File Upload/Download App
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-# File upload/download
+## Overview
 
--Upload/Download SVG files to/from an express server using ReactJS and NodeJs
+A simple web application to upload and download SVG files to and from an Express server, built using **ReactJS** for the frontend and **NodeJS** for the backend.
 
 ## Getting Started
 
-This instruction will guide you on how to get a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will help you set up the project on your local machine for development and testing.
 
 ### Prerequisites
 
-It is assumed that you have NodeJs installed on your system and you can run git commands, react-scripts, yarn and/or npm commands.
+Ensure you have the following installed:
+- **NodeJS**
+- Git
+- `react-scripts`
+- `npm` or `yarn`
 
-### Installing
+### Installation
 
-A steps to get a development env running
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/semosem/file-uploader-downloader.git
+   ```
 
-* clone your copy of the repository
+2. Navigate into the client directory and install dependencies:
+   ```bash
+   cd client
+   npm install
+   ```
 
-```
-# git clone https://github.com/semosem/file-uploader-downloader.git
-```
+Now the project is set up locally for development.
 
-* cd into this cloned directory and install necessary dependencies using the following command
+### Running the Application
 
-```
-# cd client
-# npm install
+To start the server:
 
-```
+1. Navigate to the API directory and run:
+   ```bash
+   cd api
+   node server.js
+   ```
 
-Now you have fully functioning copy of this project to further develop or see how it works within your local machine.
+2. In a separate terminal tab, navigate back to the client directory and start the React development server:
+   ```bash
+   cd client
+   npm start
+   ```
 
-## Running the server
+## Built With
 
-You can now run the server using the following two commands respectively
+- **React** - Frontend web framework
+- **NodeJS** - JavaScript runtime environment
+- **Express** - Web application framework for NodeJS
 
-```
-cd api
-node server.js
-
-```
-
-## Running the react cleint
-
-This should be done in a different tab of your terminal, cd back into "client" directory and use
-
-```
-npm start
-```
-
-## Mainly Built With the following techs 
-
-* [React](https://reactjs.org/) - As a Cleint  Web framework 
-* [NodeJS](https://nodejs.org/) - Platform used
-* [Express](https://expressjs.com/) - For server side web needs
-
-## Authors
-
-* **Sem Gebresilassie** - _Initial work_ -
-
-## Inspiration
-
-* Telia Sonera
