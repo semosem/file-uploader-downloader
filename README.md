@@ -51,7 +51,7 @@ To start the server:
 
 ## Built With
 
-- **React** - Frontend web framework
+- **React** - Frontend 
 - **NodeJS** - JavaScript runtime environment
 - **Express** - Web application framework for NodeJS
 
