@@ -3,7 +3,9 @@
 
 ## Overview
 
-A simple web application to upload and download SVG files to and from an Express server, built using **ReactJS** for the frontend and **NodeJS** for the backend.
+A simple web application to upload and download SVG files to and from an Express server, built using 
+**ReactJS** frontend and 
+**Express-NodeJS** server.
 
 ## Getting Started
 
